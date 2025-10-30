@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JavaScript Bases</title>
+
+    <link rel="stylesheet" href="./globlal.css">
+    
+    <!-- ✅ Grâce au "nouvel" attribut defer, vous pouvez mettre les liens de vos scripts js dans le head, ils seront chargés en différé (c'est à dire après création du HTML) -->
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    
+    <!-- On peut mettre du JS directement dans la page grâce à la balise script mais c'est un peu 💩 -->
+    <script>
+        console.log('coucou depuis le html');
+    </script>
+
+
+    <button id="bjr">Dire bonjour</button>
+    <!-- Le mieux : Comme pour CSS, un lien vers le fichier -->
+    <!-- Soit tout à la fin du body pour être sûrs que tout le HTML est chargé -->
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
