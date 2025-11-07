@@ -1,0 +1,56 @@
+/* Fonts */
+@font-face {
+    font-family: "Cats Alphabet";
+    src: url("./../fonts/CatsAlphabet.ttf");
+}
+
+/* Common */
+:root {
+    color: darkred;
+    background-color: snow;
+    font-family: "Curlz MT";
+}
+
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cats Alphabet";
+    text-transform: uppercase;
+    text-shadow: 0.1ch 0.1ch 0.2ch hotpink;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    min-width: 400px;
+    width: 60vw;
+    margin: auto;
+    background-color: mintcream;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 1em;
+}
+
+/* Difficulté */
+#container-difficulty {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Guess */
+#container-game {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Btn new game */
+.hidden {
+    display: none;
+}
