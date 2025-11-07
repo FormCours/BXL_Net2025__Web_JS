@@ -1,0 +1,30 @@
+body {
+    color-scheme: light;
+    background-color: light-dark(snow, midnightblue);
+    color: light-dark(black, snow);
+}
+
+body.dark-mode {
+    color-scheme: dark;
+}
+
+#switch-dark-mode {
+    position: absolute;
+    top: 0;
+    right:0;
+    margin: 1em;
+    user-select: none;
+}
+
+.fizz {
+    color: light-dark(royalblue, aquamarine) ;
+}
+
+.buzz {
+    color: light-dark(crimson, lightpink) ;
+}
+
+.fizz.buzz {
+    color: light-dark(goldenrod, gold) ;
+}
+
