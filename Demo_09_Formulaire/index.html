@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple formulaire</title>
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <h1>Demo formulaire</h1>
+    <form name="exemple-form">
+        <div>
+            <label for="input-courriel">Email *</label>
+            <input id="input-courriel" type="email" name="email" required>
+        </div>
+        <div>
+            <label for="input-pseudo">Pseudo</label>
+            <input id="input-pseudo" type="text" name="pseudo">
+        </div>
+        <div>
+            <label for="input-nb-guest">Nombre de personne *</label>
+            <input id="input-nb-guest" type="number" name="nbGuest" required min="1" step="1">
+        </div>
+        <div>
+            <label for="input-birth-date">Date de naissance *</label>
+            <input id="input-birth-date" type="date" name="birthdate" required>
+        </div>
+        <div>
+            <label for="input-allow-spaming">Newsletter</label>
+            <input id="input-allow-spaming" type="checkbox" name="spam">
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </div>
+    </form>
+</body>
+</html>
