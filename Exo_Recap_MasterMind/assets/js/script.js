@@ -16,7 +16,7 @@ mastermindForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     // Test de garde - Est ce que la partie est terminée
-    if(gameover) {
+    if (gameover) {
         return;
     }
 
@@ -80,10 +80,10 @@ function showStatusMessage(message) {
 //! Autres...
 function checkVictory(userTry) {
     let win = true;
-    
-    for(let i = 0; win && i < userTry.length; i++) {
 
-        if(userTry[i] !== mastermind[i]) {
+    for (let i = 0; win && i < userTry.length; i++) {
+
+        if (userTry[i] !== mastermind[i]) {
             win = false;
         }
     }
@@ -93,11 +93,11 @@ function checkVictory(userTry) {
 
 function getWellPlaced(userTry) {
 
-    let countWellPlaced = 0; 
+    let countWellPlaced = 0;
 
     userTry.forEach((value, index) => {
 
-        if(value === mastermind[index]) {
+        if (value === mastermind[index]) {
             countWellPlaced++;
         }
     })
@@ -109,24 +109,21 @@ function getMissPlaced(userTry) {
 
     let missPlaced = 0;
     let userTrySacrified = [...userTry]
-    
-    for(let i = 0; i < mastermind.length; i++) {
 
-        if(mastermind[i] !== userTry[i]) {
+    for (let i = 0; i < mastermind.length; i++) {
+
+        if (mastermind[i] !== userTry[i]) {
             let found = false;
 
-            for(let k = 0; (k < userTry.length && !found); k++) {
-                
-                if(mastermind[i] === userTrySacrified[k] && mastermind[k] != userTrySacrified[k]) {
+            for (let k = 0; (k < userTry.length && !found); k++) {
+
+                if (mastermind[i] === userTrySacrified[k] && mastermind[k] != userTrySacrified[k]) {
                     missPlaced++;
                     userTrySacrified[k] = undefined;
                     found = true;
                 }
-
             }
-
         }
-
     }
 
     return missPlaced;
