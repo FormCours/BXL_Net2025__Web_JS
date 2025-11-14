@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <h1>Le mastermind</h1>
+
+    <h2>Zone de jeu</h2>
+    <form name="mastermind-form">
+        <label>Proposition : </label>
+        <input type="number" min="1" max="6" step="1">
+        <input type="number" min="1" max="6" step="1">
+        <input type="number" min="1" max="6" step="1">
+        <input type="number" min="1" max="6" step="1">
+        <button type="submit">Valider</button>
+    </form>
+
+    <h2>Status</h2>
+    <div id="mastermind-status"></div>
+
+    <h2>Historique</h2>
+    <div id="mastermind-history"></div>
+</body>
+</html>
